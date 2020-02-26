@@ -8,7 +8,7 @@
 mydata='example'; 
 %--------------------------------------------------------------------------
 % Parallel settings
-workers=2;         %Set number of cores to work on a local machine
+workers=12;         %Set number of cores to work on a local machine
 %-------------- Filtering parameters --------------------------------------
 type='high';        %'low', 'high', 'bandpass'
 co=1;               %low or high corner frequency (high or low pass)
