@@ -11,7 +11,7 @@ listing2=dir(data_path2);
 yN=cell(1,length(listing1));
 yE=cell(1,length(listing2));
 %--------------------------------------------------
-for i=1:length(listing1)  %change it to parfor
+parfor i=1:length(listing1)  %change it to parfor
 %N-S component    
 filename1=sprintf('%s/%s',mydata,listing1(i).name);
 [D1,~,H1]=rdsac(filename1);
