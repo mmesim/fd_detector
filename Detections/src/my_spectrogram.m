@@ -26,7 +26,7 @@ N=length(y);
 % sampling rate
 sps=1./header(1).DELTA;
 %------------------------------------------------------
-for i=1:N  %change it to parfor
+parfor i=1:N  %change it to parfor
 %01. do spectrograms
 [~,w,t,ps]=spectrogram(y{1,i},hamming(win),overlap,256,sps);
 %convert ps from power to db  
