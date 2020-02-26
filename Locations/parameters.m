@@ -6,7 +6,7 @@
 mydata='example';
 %-------------------------------------------------------------------------
 % Parallel settings
-%workers=12;                 %Set number of cores to work on a local machine
+workers=12;                 %Set number of cores to work on a local machine
 %--------------------------------------------------------------------------
 %Cut waveforms [in seconds]
 start=0;     %time before theoretical pick                     
