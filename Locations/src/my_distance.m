@@ -8,7 +8,7 @@ function dis_sta=my_distance(grid,header)
 dis_sta=zeros(length(grid),length(header));
 
 %Get stations' coordinates
-for i=1:length(header) %change to parfor
+parfor i=1:length(header) %change to parfor
 
 stlo=header(i).STLO;
 stla=header(i).STLA;
