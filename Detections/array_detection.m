@@ -8,7 +8,7 @@ clear;clc;close all; tic %start timer
 
 %% 00.Setup
 parameters %load parameter file
-%parpool('local',workers); %Start parallel pool
+parpool('local',workers); %Start parallel pool
 mydir=pwd; pdir=sprintf('%s/src/',pwd); % get working directory path
 addpath(genpath(pdir)); %add all *.m scripts to path
 %--------------------------------------------------------------------------
@@ -47,8 +47,7 @@ disp('Output #2 - Catalog..')
 my_catalog(detections,headerE,K)
 
 %% 09. Shutdown parallel pool
-% delete(gcp)
+delete(gcp)
 fprintf('Elapsed time %6.2f minutes... \n',toc/60) %stop timer
 
-%clearvars -except detections env1 env2 headerE headerN t1 t2 trace 
-%save detections.mat
+
