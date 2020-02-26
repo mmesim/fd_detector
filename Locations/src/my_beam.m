@@ -13,7 +13,7 @@ Nsta=length(y);
 [ynew,tnew]=my_precut_waveforms(y,t,det);
 
 %Loop through grid points and get beam
-for i=1:N  %change it to parfor
+parfor i=1:N  %change it to parfor
 %function to cut waveforms in time
 y_cut=my_cut_waveforms(mwindow,tt_table(i,:),grid(i,4),ynew,tnew,det); 
 
