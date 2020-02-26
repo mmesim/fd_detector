@@ -7,7 +7,7 @@ function [R,T]=my_rotation(headerE,rlat,rlon,yN_proc,yE_proc)
 R=cell(1,length(yN_proc));
 T=cell(1,length(yE_proc));
 
-for i=1:length(headerE)  %change it to parfor
+parfor i=1:length(headerE)  %change it to parfor
 %grab station coordinates 
 %use one of the two components
 %E-W
