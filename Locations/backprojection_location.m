@@ -9,7 +9,7 @@ clear;clc; close all ;tic %start timer
 
 %% 00.Setup
 parameters %load parameter file
-%parpool('local',workers); %Start parallel pool
+parpool('local',workers); %Start parallel pool
 mydir=pwd; pdir=sprintf('%s/src/',pwd); % get working directory path
 addpath(genpath(pdir));  %add src to path (includes taup and readsac)
 %--------------------------------------------------------------------------
@@ -37,6 +37,6 @@ disp('Figures..')
 my_figure(all,grid(maxgrid,:),k)
 
 %% 06. Shutdown parallel pool
-%delete(gcp)
+delete(gcp)
 fprintf('Elapsed time %6.2f minutes... \n',toc/60) %stop timer
 
