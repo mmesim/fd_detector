@@ -9,7 +9,7 @@ N=length(amp1);
 env1=cell(1,N);
 env2=cell(1,N);
 
-for i=1:N  %change to parfor
+parfor i=1:N  %change to parfor
 %Vector 
 temp1=amp1{1,i};
 temp2=amp2{1,i};
