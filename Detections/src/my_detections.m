@@ -7,7 +7,7 @@ my_win=floor(det_win/overlap);
 N=length(network_trace(:,1))-my_win;
 ind=cell(N,1);
 %------- Start Detections -------------------------------------------------
-for i=1:N  %change to parfor
+parfor i=1:N  %change to parfor
 my_window=network_trace(i:my_win+i,1);
 MAD=mad(my_window,1); % Median absolute deviation
 MD=median(my_window); % median 
