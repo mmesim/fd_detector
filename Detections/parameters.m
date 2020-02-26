@@ -26,7 +26,7 @@ f2=30;              %higher frequency cut off to sum power
 %--------------------------------------------------------------------------
 %Detection parameters
 det_win=10;
-thres=10;
+thres=12;
 time_thres=1;
 %Output file : Define window around the detection
 out_win=2;          %Window around the detection in sec 
