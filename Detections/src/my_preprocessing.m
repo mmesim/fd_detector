@@ -8,7 +8,7 @@ function [yN_proc,yE_proc]=my_preprocessing(yN,yE,delta,type,co)
 yN_proc=cell(1,length(yN));
 yE_proc=cell(1,length(yE));
 
-for i=1:length(yN)  %change to parfor
+parfor i=1:length(yN)  %change to parfor
 tempN=yN{1,i};
 tempE=yE{1,i};
 %01. remove mean
