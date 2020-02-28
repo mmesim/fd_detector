@@ -18,7 +18,7 @@ co=1;               %low or high corner frequency (high or low pass)
 rlat=38.5; rlon=-112.887;
 %--------------------------------------------------------------------------
 %Spectrogram parameters 
-norm_win=10;       %set window for normalization
+norm_win=2;       %set window for normalization
 win=0.2;            %set window for fft in sec 
 overlap=0.19;       %set overlaping window in sec
 f1=10;              %lower frequency cut off to sum power
