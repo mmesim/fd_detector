@@ -19,7 +19,7 @@ function [amp,t1]=my_spectrogram(norm_win,win,overlap,header,y,f1,f2)
 %Parameters 
 win=round(win./header(1).DELTA); %window from seconds to samples
 overlap=round(overlap./header(1).DELTA); %overlap from seconds to samples
-%normalization window [by default is 2 times the fft window]
+%normalization window 
 time=norm_win/header(1).DELTA;
 % length of parfor
 N=length(y);
