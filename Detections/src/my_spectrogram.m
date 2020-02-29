@@ -19,6 +19,7 @@ function [amp,t1]=my_spectrogram(norm_win,win,overlap,header,y,f1,f2)
 %Parameters 
 win=round(win./header(1).DELTA); %window from seconds to samples
 overlap=round(overlap./header(1).DELTA); %overlap from seconds to samples
+nfft=pow2(floor(log2(win))); %nearest smallest power of two
 %normalization window 
 time=norm_win/header(1).DELTA;
 % length of parfor
@@ -28,7 +29,7 @@ sps=1./header(1).DELTA;
 %------------------------------------------------------
 parfor i=1:N  %change it to parfor
 %01. do spectrograms
-[~,w,t,ps]=spectrogram(y{1,i},hamming(win),overlap,256,sps);
+[~,w,t,ps]=spectrogram(y{1,i},hamming(win),overlap,nfft,sps);
 %convert ps from power to db  
 psdb=pow2db(ps);
 
