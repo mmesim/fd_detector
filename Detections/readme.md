@@ -1,6 +1,18 @@
 ## In-Out:
 in---> Waveforms in SAC format
-out---> (i) Catalog with detection times [S arrival times]. Figures (ii) Netwrok trace for each detection cut around the detection time, (iii) Waveforms for each detection cut around the detection time, (iv) Envelopes of summed power for each detection cut around the detection time. All figures saved as .png. 
+
+out---> 
+(i) Catalog with detection times [S arrival times].  
+
+Figures 
+
+(ii) Netwrok trace for each detection cut around the detection time, 
+
+(iii) Waveforms for each detection cut around the detection time, 
+
+(iv) Envelopes of summed power for each detection cut around the detection time. 
+
+All figures saved as .png. 
 
 ## Parameter File
 
