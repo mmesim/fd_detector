@@ -7,5 +7,6 @@ t=time+seconds(detections)-seconds(loc(:,4)); %time in seconds since the beginni
 %output catalog
 fout=fopen('locations.txt','A');
 fprintf(fout,'%s %s %7.4f %9.4f %6.2f %3.1f \n', headerE(1).KZDATE ,char(t), loc(:,1),loc(:,2),loc(:,3));
+fclose(fout);
 
 end
