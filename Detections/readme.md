@@ -1,4 +1,4 @@
-##Parameter File
+## Parameter File
 
 **mydata**= string, full path to waveforms. The directory should contain all the waveforms in SAC format (2hr blocks). 
 
