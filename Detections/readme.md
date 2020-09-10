@@ -1,7 +1,7 @@
 ## In-Out:
-in---> Waveforms in SAC format
+in > Waveforms in SAC format
 
-out---> 
+out > 
 (i) Catalog with detection times [S arrival times].  
 
 Figures 
