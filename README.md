@@ -4,7 +4,7 @@ Package for detecting and locating seismic events using dense surface arrays.
 
 
 
-Reference: *Mesimeri, M., Pankow, K., (2020). A frequency-domain-based algorithm for detecting induced seismicity using dense surface seismic arrays (submitted)*
+Reference: *Mesimeri, M., Pankow, K., Rutledge, J. (2021). A frequency-domain-based algorithm for detecting microseismicity using dense surface seismic arrays, Bulletin of the Seismological Society of America. 10.1785/0120210062*
 
 
 Written in Matlab
